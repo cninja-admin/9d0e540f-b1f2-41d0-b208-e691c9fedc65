@@ -1,0 +1,223 @@
+body {
+  margin: 0px;
+  background-color: rgb(3, 36, 36);
+}
+
+#body-header {
+  width: 100%;
+  height: 20vh;
+}
+
+.horizontal-list {
+  list-style: none;
+  padding-left: 0px;
+  margin: 0px;
+}
+
+.horizontal-list li {
+  display: inline-block;
+  margin: 5px 8px 8px 0px;
+}
+
+.color-white li {
+  color: white;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-heading {
+  width: auto;
+  padding: 20px 10px 10px;
+  margin: 10px auto;
+  font-size: 1rem;
+  color: white;
+}
+
+.artist-container {
+  width: 660px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.atc-child {
+  width: 100px;
+  height: 100px;
+}
+
+.atc-child img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.at-name {
+  width: 660px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.at-name-child {
+  width: 100px;
+  height: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.at-name span {
+  color: white;
+  font-size: 0.65rem;
+}
+
+.genre-container {
+  width: 660px;
+  height: 135px;
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.genre-child {
+  width: 150px;
+  height: 130px;
+}
+
+.genre-child img {
+  height: 100%;
+  width: 100%;
+}
+
+.g-name {
+  width: 660px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.gname-child {
+  width: 100px;
+  height: 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gname-child span {
+  color: white;
+  font-size: 0.65rem;
+}
+
+.album-container {
+  width: 660px;
+  height: 200px;
+  display: flex;
+
+  justify-content: space-around;
+}
+
+.album {
+  margin-top: 30px;
+  width: 100px;
+  height: 100px;
+
+  transform: rotate(-45deg);
+}
+
+.album img {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.album-container div {
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-iteration-count: 10;
+  animation-direction: alternate;
+}
+
+main {
+  display: inline-block;
+  width: 75vw;
+}
+
+aside {
+  display: inline-block;
+  vertical-align: top;
+  background-color: rgb(10, 174, 174);
+}
+
+.header-div {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-div span {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.aside-content {
+  width: 200px;
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+}
+
+.aside-div1 {
+  width: 60px;
+  height: 60px;
+}
+
+.aside-div1 img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.aside-div2 {
+  width: 100px;
+  height: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.6rem;
+  font-weight: 900;
+  color: black;
+}
+
+.aside-div3 {
+  width: 40px;
+  height: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  #main {
+    width: 40%;
+  }
+}
